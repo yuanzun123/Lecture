@@ -34,3 +34,5 @@ int main() {
     }
     return 0;
 }
+//1.此代码在将true 或 false转换为int时true对应的时1，false对应0
+//2.此代码利用日期的减法计算月数
