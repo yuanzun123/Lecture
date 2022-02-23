@@ -36,3 +36,4 @@ int main() {
     }
     return 0;
 }
+//1.定义const int MAXN常量
