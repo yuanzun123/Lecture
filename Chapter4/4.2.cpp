@@ -25,3 +25,4 @@ int main() {
         return 0;
     }
 }
+//1.用getline进行有空格的字符串输入
