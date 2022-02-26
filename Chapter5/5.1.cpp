@@ -44,3 +44,5 @@ int main() {
     printf("\n");
     return 0;
 }
+//1.cout << 'E:'会发生乱码， 应该写成 cout << 'E' << ':'
+//2.本例中vector的两种用法应当记住
