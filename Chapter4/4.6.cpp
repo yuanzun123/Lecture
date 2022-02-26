@@ -17,12 +17,12 @@ int nextTable[MAXM];
 int pattern[MAXM];
 int text[MAXN];
 
-void GetNextTable(int m) {                      //创建next表
-    int j = 0;
-    nextTable[j] = -1;
-    int t = nextTable[j];
-    while (j < m) {
-        if (t == -1 || pattern[j] == pattern[t]) {
+void GetNextTable(int m) {                      //创建next表，next列表长度是m+1，即他的索引最大为m
+    int j = 0;                                  //next[j]反应的是pattern[0]~pattern[j-1]这一段字符串的最大共有元素长度
+    nextTable[j] = -1;                          //仅仅next[0]可以等于-1，其他如果没有都为0，还有pattern[-1]与任何其他元素都匹配
+    int t = nextTable[j];                       //next[j]可以在pattern[j]与txt[i]不匹配时，返回新的可以供匹配的pattern索引，而定义方式是用了一个迭代，这样可以更为高效的的定义
+    while (j < m) {                             //t的含义是当前最大前缀共有元素下一个元素的索引
+        if (t == -1 || pattern[j] == pattern[t]) {  //所以采用如此递归方式
             j++;
             t++;
             nextTable[j] = t;
@@ -33,7 +33,7 @@ void GetNextTable(int m) {                      //创建next表
     return ;
 }
 
-int KMP(int n, int m) {
+int KMP(int n, int m) {                                             
     GetNextTable(m);
     int i = 0;
     int j = 0;
@@ -68,4 +68,6 @@ int main() {
     }
     return 0;
 }
-
+//1.if判断语句中==，不要写成=
+//2.KMP算法理解：
+//3.while（case--）减号放在后面而不是前面
