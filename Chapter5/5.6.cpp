@@ -82,7 +82,7 @@ int main() {
     }
     return 0;
 }
-//1.C++中用isdigit（）函数判断一个字符char是否为整形数字（详见：https://blog.csdn.net/xdz78/article/details/53057304）
+//1.C++中用isdigit（）函数判断一个字符char是否为整形数字（详见：https://blog.csdn.net/xdz78/article/details/53057304）（事先调用cctype库）
 //2.注意第54行，字符串判断是否相等必须用双引号，仅仅单个字符才能用单引号
 //3.从一个字符串中截取一段字符串转换为一个数的函数本题值得学习，还有先定义一个double类型，之后运算过程中一直是double类型，而不用转换
 //4.在字符栈中的'#'与字符串末尾添加的'$'（设立了两个不存在的符号辅助运算）
