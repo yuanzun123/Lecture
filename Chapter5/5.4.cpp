@@ -29,3 +29,5 @@ int main() {
     }
     return 0;
 }
+//1.stack先进先出的特点
+//2.注意2^64要用long long型
