@@ -49,3 +49,4 @@ int main() {
     }
     return 0;
 }
+//1.sort中定义的Compare（x，y）函数记住，当它返回值为true时，x就排在y前面
