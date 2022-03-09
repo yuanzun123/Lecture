@@ -37,3 +37,5 @@ int main() {
     }
     return 0;
 }
+//1.int（10^9）,long long(10^18) int与long long的范围（https://blog.csdn.net/gotowu/article/details/51203920）
+//2.本题构建的搜索空间范围以及扩展搜索的反思：从结果（全为0和1）出发构建搜索范围，而不是条件（n的倍数）
