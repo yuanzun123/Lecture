@@ -42,3 +42,4 @@ int main() {
     }
     return 0;
 }
+//注意点：字符串中带" "的情况要用getline(cin, str)作为输入
