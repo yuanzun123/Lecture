@@ -33,3 +33,5 @@ int main() {
     }
     return 0;
 }
+//语法：priority_queue<int, vector<int>, greater<int> > myPriorityQueue;（这种定义方式可以让优先队列优先输出优先级最低的元素）
+//核心思想（24~31行）：递推，用a+b这个新节点代替a，b两个节点，并在结果上加上a+b
